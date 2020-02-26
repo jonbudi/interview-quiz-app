@@ -1,0 +1,728 @@
+{
+	"quiz": [
+		{
+			"question": "Dependency Injection",
+			"answer": [
+				"technique where if an object requires a different object to function, supply it, rather than creating the instance within the object"
+			],
+			"section": "General"
+		},
+		{
+			"question": "Hash Collision",
+			"answer": [
+				"occurs when a hash function returns the same bucket location for two different keys"
+			],
+			"section": "General"
+		},
+		{
+			"question": "Hash Table",
+			"answer": [
+				""
+			],
+			"section": "General"
+		},
+		{
+			"question": "Hash Function",
+			"answer": [
+				"Deterministic, meaning given input will always generate the same hash function"
+			],
+			"section": "General"
+		},
+		{
+			"question": "4 OOP principals",
+			"answer": [
+				"Abstraction",
+				"Hide complexity while only showing relevant information",
+				"Complex data structure and you want to sort as effiently as possible, you create an algorithm for all different cases like if the data is in order, reverse order, skewed left, right, but in the end you just call .Sort()",
+				"",
+				"Encapsulation",
+				"Restricting access to some object's components (information hiding)",
+				"Keeping fields private but provide controlled access to them via public methods",
+				"Getter and setters, maybe you have an app that lets you see what your credit card balance is. You don't want that app to be able to set the balance to 0.",
+				"Access Modifiers - (private/protected/public/internal)",
+				"",
+				"Inheritance",
+				"Create new child class while sharing functionality from its parent class",
+				"Prevents re-inventing the wheel (Don't Repeat Yourself - DRY)",
+				"",
+				"Polymorphism",
+				"Allows the ability to take on more than one form",
+				"method overloading - multiple methods with the same name, but different inputs",
+				"method overriding - change the functionality of method that was previously defined in a parent class"
+			],
+			"section": "OOP"
+		},
+		{
+			"question": "SOLID principles",
+			"answer": [
+				"Single responsibility principle",
+				"A class should only have a single responsibility",
+				"",
+				"Open–closed principle",
+				"Software entities should be open for extension, but closed for modification",
+				"",
+				"Liskov substitution principle",
+				"Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program. See also design by contract.",
+				"",
+				"Interface segregation principle",
+				"Many client-specific interfaces are better than one general-purpose interface.",
+				"",
+				"Dependency inversion principle",
+				"One should depend upon abstractions, [not] concretions."
+			],
+			"section": "OOP",
+			"sources": [
+				"http://en.wikipedia.org/wiki/SOLID"
+			]
+		},
+		{
+			"question": "Design Patterns",
+			"answer": [
+				"Creational",
+				"provide the capability to create objects based on a required criteria and in a controlled way",
+				"Singleton",
+				"Ensure class has only one instance to be used across an entire system",
+				"",
+				"Abstract factory",
+				"",
+				"Structural",
+				"organizing different classes and objects to form larger structures and provide new functionality",
+				"Decorator",
+				"",
+				"Facade",
+				"",
+				"Behavioral",
+				"identifying common communication patterns between objects and realize these patterns",
+				"Iterator"
+			],
+			"section": "OOP"
+		},
+		{
+			"question": "N-tier architecture",
+			"answer": [
+				"Dividing application into multiple tiers, such as data tier, business tier, view tier"
+			],
+			"section": "General"
+		},
+		{
+			"question": "Service Oriented Architecture",
+			"answer": [
+				"structuring your application into multiple services separating concerns while allowing them to communicate with one another"
+			],
+			"section": "General"
+		},
+		{
+			"question": "TCP vs UDP",
+			"answer": [
+				"Transmission Control Protocol (TCP) is a connection-oriented protocol that computers use to communicate over the internet. It is one of the main protocols in TCP/IP networks. TCP provides error-checking and guarantees delivery of data and that packets will be delivered in the order they were sent.",
+				"",
+				"User Datagram Protocol (UDP) is a connectionless protocol that works just like TCP but assumes that error-checking and recovery services are not required. Instead, UDP continuously sends datagrams to the recipient whether they receive them or not."
+			],
+			"section": "Security"
+		},
+		{
+			"question": "POCO",
+			"answer": [
+				"Plain Old CLR/C# Object",
+				"a simple object that contains data",
+				"they don't care what/how they are being used"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "MVC",
+			"answer": [
+				"Model",
+				"View",
+				"Controller"
+			],
+			"section": ""
+		},
+		{
+			"question": "",
+			"answer": [
+				""
+			],
+			"section": ""
+		},
+		{
+			"question": "Java HashSet vs TreeSet",
+			"answer": [
+				"HashSet is unordered.",
+				"TreeSet is stored in sorted, asc order."
+			],
+			"section": "Java"
+		},
+		{
+			"question": "Java hashCode()",
+			"answer": [
+				"an integer value generated by a hashing algorithm"
+			],
+			"section": "Java"
+		},
+		{
+			"question": "Java Garbage Collection",
+			"answer": [
+				"automatic memory management, unused objected are deleted to free up memory"
+			],
+			"section": "Java"
+		},
+		{
+			"question": "SQL Constraint",
+			"answer": [
+				"enforce rules on the data columns",
+				"",
+				"NOT NULL",
+				"",
+				"DEFAULT",
+				"",
+				"UNIQUE",
+				"",
+				"PRIMARY KEY",
+				"identify row/record in a given table, can be multiple columns",
+				"",
+				"FOREIGN KEY",
+				"identify row/record in another table"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Delete vs. Truncate",
+			"answer": [
+				"Delete can be rolled back, does not reset identity, DML",
+				"Truncate can't be rolled back, resets identity, faster, recovers space, removes all records, DDL"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL commands (subsets of SQL)",
+			"answer": [
+				"DDL - data definition language",
+				"DML - data manipulation language (CRUD)",
+				"DCL - data control language",
+				"TCL - transaction control language"
+			],
+			"image": "https://i.stack.imgur.com/7uUaJ.png",
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Identity",
+			"answer": [
+				"type of column that generates a unique key value based on a given seed",
+				"this value increases automatically"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Alias",
+			"answer": [
+				"temporary name assigned to table or column (AS keyword)"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Stored Procedures",
+			"answer": [
+				"subroutine/function that you can save to be run with or without parameters"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Joins",
+			"answer": [
+				"left, right, inner, outer",
+				"<img src='https://i.stack.imgur.com/iJUMl.png'>"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Stored Procedure vs. Function",
+			"answer": [
+				"Stored Procedure",
+				"Precompiled",
+				"",
+				"Function",
+				"Compiled and executed every time"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Injection",
+			"answer": [
+				"technique used to maliciously modify the data"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Trigger",
+			"answer": [
+				"a stored procedure that runs on a given event"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Get Identity of Inserted Row",
+			"answer": [
+				"<code>@@Identity</code> returns the last identity value in current session across all scopes",
+				"",
+				"<code>Scope_Identity()</code> returns the last identity in current session in current scope (use this in most cases)"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Server vs. Oracle",
+			"answer": [
+				"SQL Server",
+				"Transact-SQL (T-SQL)",
+				"easier to work with, optimize better",
+				"",
+				"Orcale",
+				"Procedural Language SQL (PL-SQL)",
+				""
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL View vs Temp Table",
+			"answer": [
+				"View",
+				"Basically a select statement shortcut (executes every time)",
+				"",
+				"Temp Table",
+				"Takes space/permission"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL CTE",
+			"answer": [
+				"Common table expression allows definition of a temporary result set within the given scope"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Clustered vs. Non-Clustered Index",
+			"answer": [
+				"Clustered",
+				"Index that sorts datarows on one of their key values",
+				"",
+				"Non-Clustered",
+				"allows for multiple indexes for a given column",
+				"faster lookups but extra storage"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "SQL Cursor",
+			"answer": [
+				"enables the processing of individual rows returned by a query"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "Database Normalization",
+			"answer": [
+				"Design technique to reduce redunancy and dependacity of data, used to organize larger tables into smaller tables with linked relationships"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "How to store passwords in database",
+			"answer": [
+				"Store hashed+salted password into table",
+				"Hash returns value that cannot be inverted",
+				"Salt is added to make the hash output unique"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "Rainbow table",
+			"answer": [
+				"pre-computed lookup tables to crack password hashes"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "C# Object",
+			"answer": [
+				"blueprint that specifies what that type can do"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# Accessor",
+			"answer": [
+				"getter",
+				"gets the value of a given private field",
+				"",
+				"setter",
+				"if defined, sets the value of a given private field"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# Access Modifiers",
+			"answer": [
+				"public",
+				"can be accessed by any code within all assemblies",
+				"",
+				"private",
+				"can only be accessed by code in the same class",
+				"",
+				"protected",
+				"can only be accessed by code in the same class or any dervied classes",
+				"",
+				"internal",
+				"can be accessed by any code within the same assembly, but not from another assembly"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# Boxing vs. Unboxing",
+			"answer": [
+				"Boxing - value to reference type",
+				"<code>int i = 1;",
+				"Object o = i;</code>",
+				"",
+				"Unboxing - reference to value type",
+				"<code>Object o = 1;",
+				"int i = (int)o</code>"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# Struct vs Object",
+			"answer": [
+				"Struct",
+				"Value type, can't be inherited or abstract or have default constructor",
+				"CONSIDER defining a struct instead of a class if instances of the type are small and commonly short-lived or are commonly embedded in other objects.",
+				"",
+				"Class",
+				"Reference type"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# Generics",
+			"answer": [
+				"Allows you to write a class or method that can work with any data type <code>public class TestClass<T> { }  </code>"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# Abstract vs. Interface",
+			"answer": [
+				"Class can implement as many interfaces, but only one abstact class",
+				"abstract class can have non-abstract methods, where interface can only have abstract methods",
+				"abstract class can declase/use variables"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# using",
+			"answer": [
+				"ensures that the given <code>IDisposable</code> object's <code>Dispose</code> method is called after execution, even if an exception is thrown"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# Garbage Collector",
+			"answer": [
+				"non-determinalistic way that allows us to not have to manually free memory on the heap"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# delegate",
+			"answer": [
+				"a type that specifies a method signature"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# lambda",
+			"answer": [
+				"another way to define a delegate, syntatic sugar"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# volatile",
+			"answer": [
+				"indicates field might be modified by multiple threads at the same time"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# virtual",
+			"answer": [
+				"signals this method/property/indexer/event declaration can be overriden in its derived class"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# unsafe",
+			"answer": [
+				"denotes unsafe context, which is required for any operation involving pointers"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# Static constructor",
+			"answer": [
+				"Static constructor only executes once in the entire life cycle of the class"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# String vs. string vs. StringBuilder",
+			"answer": [
+				"String",
+				"System.String is an alias for string",
+				"",
+				"string",
+				"immutable",
+				"",
+				"StringBuilder",
+				"mutable"
+			],
+			"section": "C#"
+		},
+		{
+			"question": "C# value vs. reference",
+			"answer": [
+				"value",
+				"holds value",
+				"stored on stack",
+				"",
+				"reference",
+				"holds memory address",
+				"stored on heap"
+			],
+			"section": "C#"
+		},
+		{
+			"question": ".NET CLR",
+			"answer": [
+				"Common Language Runtime - runs managed code (written in .NET), unmanaged code is written outside of .NET"
+			],
+			"section": "C# .NET"
+		},
+		{
+			"question": ".NET routing",
+			"answer": [
+				"routes urls of incoming requests and maps them to actions"
+			],
+			"section": "C# .NET"
+		},
+		{
+			"question": "Azure Pipelines",
+			"answer": [
+				""
+			],
+			"section": "C# Azure"
+		},
+		{
+			"question": "Azure Artifacts",
+			"answer": [
+				"create package feeds (like from NuGet) to organize/control packages"
+			],
+			"section": "C# Azure"
+		},
+		{
+			"question": "Git vs. SVN",
+			"answer": [
+				"Git distributed version control",
+				"SVN centralized"
+			],
+			"section": "Git"
+		},
+		{
+			"question": "Web Server",
+			"answer": [
+				"Software/Hardware needed to host a web application"
+			],
+			"section": "General"
+		},
+		{
+			"question": "Ports for HTTP/HTTPS",
+			"answer": [
+				"HTTP: 80",
+				"HTTPS: 443"
+			],
+			"section": "Security"
+		},
+		{
+			"question": "Apache Kafka",
+			"answer": [
+				"High throughout distributed messaging system"
+			],
+			"section": "Kafka"
+		},
+		{
+			"question": "Data Warehouse",
+			"answer": [
+				"large store of data used for business analysis"
+			],
+			"section": "SQL"
+		},
+		{
+			"question": "Agile",
+			"answer": [
+				"software-development methodology tool used to gather requirements before development and provides flexibility for any changes through a collaborative effort of cross-function teams and end users"
+			],
+			"section": "Agile/Scrum"
+		},
+		{
+			"question": "Scrum",
+			"answer": [
+				"defines roles, sets of processes (sprint planning, review, retro, etc) to provide transparency to the stakeholders while giving developers achievable goals within a short period of time (two weeks)"
+			],
+			"section": "Agile/Scrum"
+		},
+		{
+			"question": "SDLC steps",
+			"answer": [
+				"Plan -> Analyze -> Design -> Implement -> Test/Deploy -> Maintain"
+			],
+			"section": "Agile/Scrum"
+		},
+		{
+			"question": "TLS",
+			"answer": [
+				"Transport Layer Security",
+				"protocall to secure communication between web server and browser"
+			],
+			"section": "Security"
+		},
+		{
+			"question": "",
+			"answer": [
+				""
+			]
+		},
+		{
+			"question": "BFS vs DFS",
+			"answer": [
+				"Breadth First Search",
+				"Level Order Traversal",
+				"Uses queue",
+				"Recursive",
+				"",
+				"Depth First Search",
+				"Uses stack",
+				"Iterative"
+			],
+			"section": "Algorithms"
+		},
+		{
+			"question": "jQuery <code>$</code>",
+			"answer": [
+				"<code>$</code> alias for <code>jQuery</code>"
+			],
+			"section": "jQuery"
+		},
+		{
+			"question": "",
+			"answer": [
+				""
+			]
+		},
+		{
+			"question": "Tell me about yourself",
+			"answer": [
+				"My name is Jonathan Budi. I'm a software engineer previously at J.D. Power where I was laid off because of a sale to private equity, a merger, and outsourcing. I majored in computer science at UCI, graduated in three years. I've been at J.D. Power for four years, we're a Microsoft shop, but still kinda old school. My role was kind of a jack of all trades, I worked on Ads, Automated QA, DevOps, Product Management, Design, to name a few. I do quantitative investing on the side, basically just some math and models to combine and play with the stock market. I also play a lot of basketball, trying to get back into shape. At the end of the day, I'm young and I'm gonna make mistakes, but I'm a quick learner and I'm ready to work."
+			],
+			"section": "Behaviorial"
+		},
+		{
+			"question": "STAR method",
+			"answer": [
+				"Situation",
+				"",
+				"Task",
+				"",
+				"Action",
+				"",
+				"Result",
+				"",
+				"<a href='https://www.themuse.com/advice/star-interview-method'>Link</a>"
+			],
+			"section": "Behaviorial"
+		},
+		{
+			"question": "Talk about a time when you had to work closely with someone whose personality was very different from yours.",
+			"answer": [
+				"In a team setting it's good to know you're teammates. We've all worked with people who are stubborn and I'm more relaxed and more towards letting others lead if I know they're capable, but I'll still present my opinion if I'm confident in mine. So I was working with the dev on some logging application I noticed that there was a kind of weird try/catch situation going on so I proposed a different pattern. But the dev rejected it. So when working with people that have different personalities, there's still commonalities, so knowing this person, he was extremely analytical and wants concrete real-world examples. So I played to that strength, engineering a scenario that I knew would display the faults in the design, and he accepted that. He proceded to tear apart my solution to the problem as well, which I also accepted, we ended up with a kinda hybrid/combined solution that we were both happy with."
+			],
+			"section": "Behaviorial"
+		},
+		{
+			"question": "Give me an example of a time you faced a conflict while working on a team. How did you handle that?",
+			"answer": [
+				"We were in the process of being sold and one of the agreements was to have a complete responive redesign of our main application before the closing of the purchase. While we were planning on working on this already, it was only supposed to be for one section of the site as a trial run, and we didn't know about the sale to begin with. Our team (devs, business/product) was tasked to work on this. A lot of us were stressed out, myself included, and at some point during a standup, two of the engineers just started yelling at each other. So a couple hours after the standup, both of them each went to me, almost one after the other, and took a break for a walk and just started ranting. At that point, this was early in my career, I guess I kind of understood that kind of stuff just happens and its good to have someone to listen to and air complaints. At end they were fine, we somehow finished the project on time too."
+			],
+			"section": "Behaviorial"
+		},
+		{
+			"question": "Talking Points",
+			"answer": [
+				"Play to teammate's strength after building rapport",
+				"Handling things that are in our control when given a hard deadline (responsive redesign in order to sell company)",
+				"Ads Manager was a new project",
+				"Transitioning from waterfall to agile/scrum",
+				"Transitioning from SVN to Git, release management",
+				"Working with UX (Wai) to improve product",
+				"Ads mistagging",
+				"Outsourcing"
+			],
+			"section": "Behaviorial"
+		},
+		{
+			"question": "What was your role?",
+			"answer": [
+				"Worked on consumer facing .NET web applications (jdpower.com and NADAguides.com)",
+				""
+			],
+			"section": "Resume"
+		},
+		{
+			"question": "Questions for Capital Group",
+			"answer": [
+				"Trading restrictions",
+				"what do the teams looks like",
+				"will we work with the team in L.A. (Shaun)?"
+			],
+			"section": "Questions"
+		},
+		{
+			"question": "Pub/sub",
+			"answer": [
+				"Sends messages (publishers) to subscribers"
+			],
+			"section": "General"
+		},
+		{
+			"question": "React - why?",
+			"answer": [
+				"Components",
+				"Virtual DOM - faster than vanilla JavaScript"
+			],
+			"section": "React"
+		},
+		{
+			"question": "",
+			"answer": [
+				""
+			],
+			"section": ""
+		},
+		{
+			"question": "",
+			"answer": [
+				""
+			],
+			"section": ""
+		}
+	]
+}
