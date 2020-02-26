@@ -102,10 +102,20 @@ class Question extends React.Component {
 }
 
 class Answer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick(e) {
+        e.stopPropagation();
+    }
+
     render() {
         return (
             <div
                 className="answer-container"
+                onClick={this.handleClick}
                 style={this.props.isDisplayed ? {} : { display: "none" }}>
                 {this.props.answer && this.props.answer[0]
                     ? this.props.answer.map((a, i) => {

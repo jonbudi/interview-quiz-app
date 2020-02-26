@@ -860,12 +860,13 @@
 				"Action",
 				"",
 				"Result",
-				"",
-				"<a href='https://www.themuse.com/advice/star-interview-method'>Link</a>"
+				""
 			],
 			"image": "",
 			"section": "Behaviorial",
-			"sources": [],
+			"sources": [
+				"https://www.themuse.com/advice/star-interview-method"
+			],
 			"type": ""
 		},
 		{
@@ -914,7 +915,10 @@
 			"question": "What was your role?",
 			"answer": [
 				"Worked on consumer facing .NET web applications (jdpower.com and NADAguides.com)",
-				""
+				"Worked on APIs, beginning the work to migrate from a monolithic app",
+				"Automated QA (selenium)",
+				"Ads (javascript)",
+				"CI/CD pipelines"
 			],
 			"image": "",
 			"section": "Resume",
@@ -947,18 +951,31 @@
 			"answer": [
 				"class Singleton",
 				"{",
+				"    private static Singleton StaticInstance = null;",
+				"    private static readonly object Lock = new object();",
 				"    private Singleton() { }",
-				"    private static Singleton _instance;",
 				"    public static Singleton GetInstance()",
 				"    {",
-				"         if (_instance == null) { instance = new Singleton(); }",
-				"         return _instance;",
+				"        lock (Lock)",
+				"        {",
+				"            if (StaticInstance == null) StaticInstance = new Singleton();",
+				"            return StaticInstance;",
+				"        }",
 				"    }",
+				"}",
+				"",
+				"class Singleton",
+				"{",
+				"    private static readonly Lazy<Singleton> Lazy = new Lazy<Singleton>(() => new Singleton());",
+				"    public static Singleton Instance => Lazy.Value;",
+				"    private Singleton() { }",
 				"}"
 			],
 			"image": "",
 			"section": "OOP",
-			"sources": [],
+			"sources": [
+				"https://csharpindepth.com/articles/singleton"
+			],
 			"type": "code"
 		},
 		{
@@ -967,7 +984,8 @@
 				""
 			],
 			"image": "",
-			"section": ""
+			"section": "",
+			"type": ""
 		}
 	]
 }
