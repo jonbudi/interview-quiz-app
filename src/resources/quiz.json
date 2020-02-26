@@ -588,6 +588,13 @@
 			"section": "Agile/Scrum"
 		},
 		{
+			"question": "Product Owner",
+			"answer": [
+				""
+			],
+			"section": "Agile/Scrum"
+		},
+		{
 			"question": "TLS",
 			"answer": [
 				"Transport Layer Security",
