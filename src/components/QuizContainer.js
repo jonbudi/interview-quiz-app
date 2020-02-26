@@ -22,7 +22,7 @@ export default class QuizContainer extends React.Component {
     }
 
     render() {
-        const quizQuestions = quiz.quiz.filter(q => q.question !== "" || q.hidden);
+        const quizQuestions = quiz.quiz.filter(q => q.question !== "");
         quizQuestions.sort((a, b) => {
             var aSection = a.section || "z";
             var bSection = b.section || "z";
@@ -106,7 +106,7 @@ class Answer extends React.Component {
             <div
                 className="answer-container"
                 style={this.props.isDisplayed ? {} : { display: "none" }}>
-                {this.props.answer[0]
+                {this.props.answer && this.props.answer[0]
                     ? this.props.answer.map((a, i) => {
                         return (
                             <div key={`a-${i}`} className="answer">
@@ -116,11 +116,11 @@ class Answer extends React.Component {
                     })
                     : <div style={{ color: "red" }}>Answer this!</div>
                 }
-                {this.props.image && <img src={this.props.image} />}
+                {this.props.image && <img src={this.props.image} alt={this.props.image} />}
                 <div>
-                    {this.props.sources && this.props.sources.map((a, i) => {
+                    {this.props.sources && this.props.sources.length > 0 && this.props.sources.map((a, i) => {
                         return (
-                        <a href={a}>{a}</a>
+                            <a href={a}>{a}</a>
                         );
                     })}
                 </div>
