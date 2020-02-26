@@ -112,6 +112,8 @@ class Answer extends React.Component {
     }
 
     render() {
+        const hasSources = this.props.sources && this.props.sources.length > 0;
+
         return (
             <div
                 className="answer-container"
@@ -128,6 +130,13 @@ class Answer extends React.Component {
                                 </div>
                             );
                         }
+                        else if (this.props.type === "list") {
+                            return (
+                                <li key={`a-${i}`} className="answer">
+                                    {a}
+                                </li>
+                            );
+                        }
                         else {
                             return (
                                 <div key={`a-${i}`} className="answer">
@@ -139,10 +148,13 @@ class Answer extends React.Component {
                     : <div style={{ color: "red" }}>Answer this!</div>
                 }
                 {this.props.image && <img src={this.props.image} alt={this.props.image} />}
-                <div>
-                    {this.props.sources && this.props.sources.length > 0 && this.props.sources.map((a, i) => {
+                <div className="sources">
+                    {hasSources ? "Source(s):" : ""}
+                    {hasSources && this.props.sources.map((a, i) => {
                         return (
-                            <a href={a}>{a}</a>
+                            <div>
+                                <a href={a} target="_blank" rel="noopener noreferrer">{a}</a>
+                            </div>
                         );
                     })}
                 </div>

@@ -14,8 +14,15 @@
         margin-left: $spacing-md;
 
         .answer {
-            white-space: pre;
             margin-bottom: $spacing-xs;
+
+            code {
+                white-space: pre;
+            }
+        }
+
+        .sources a {
+            margin-left: $spacing-md;
         }
     }
 }
