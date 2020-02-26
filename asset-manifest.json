@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/interview-quiz-app/static/css/main.b1398abb.chunk.css",
+    "main.js": "/interview-quiz-app/static/js/main.a83c9fb9.chunk.js",
+    "main.js.map": "/interview-quiz-app/static/js/main.a83c9fb9.chunk.js.map",
+    "runtime-main.js": "/interview-quiz-app/static/js/runtime-main.16d78e85.js",
+    "runtime-main.js.map": "/interview-quiz-app/static/js/runtime-main.16d78e85.js.map",
+    "static/js/2.8fee69cd.chunk.js": "/interview-quiz-app/static/js/2.8fee69cd.chunk.js",
+    "static/js/2.8fee69cd.chunk.js.map": "/interview-quiz-app/static/js/2.8fee69cd.chunk.js.map",
+    "index.html": "/interview-quiz-app/index.html",
+    "precache-manifest.cad47fc02d323dd15de2d883b2aa07bd.js": "/interview-quiz-app/precache-manifest.cad47fc02d323dd15de2d883b2aa07bd.js",
+    "service-worker.js": "/interview-quiz-app/service-worker.js",
+    "static/css/main.b1398abb.chunk.css.map": "/interview-quiz-app/static/css/main.b1398abb.chunk.css.map",
+    "static/js/2.8fee69cd.chunk.js.LICENSE.txt": "/interview-quiz-app/static/js/2.8fee69cd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16d78e85.js",
+    "static/js/2.8fee69cd.chunk.js",
+    "static/css/main.b1398abb.chunk.css",
+    "static/js/main.a83c9fb9.chunk.js"
+  ]
+}
