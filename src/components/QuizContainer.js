@@ -84,7 +84,8 @@ class QuestionContainer extends React.Component {
                     answer={item.answer}
                     isDisplayed={this.state.isDisplayed}
                     image={item.image}
-                    sources={item.sources} />
+                    sources={item.sources}
+                    type={item.type} />
             </div>
         );
     }
@@ -108,11 +109,22 @@ class Answer extends React.Component {
                 style={this.props.isDisplayed ? {} : { display: "none" }}>
                 {this.props.answer && this.props.answer[0]
                     ? this.props.answer.map((a, i) => {
-                        return (
-                            <div key={`a-${i}`} className="answer">
-                                {a}
-                            </div>
-                        );
+                        if (this.props.type === "code") {
+                            return (
+                                <div key={`a-${i}`} className="answer">
+                                    <code>
+                                        {a}
+                                    </code>
+                                </div>
+                            );
+                        }
+                        else {
+                            return (
+                                <div key={`a-${i}`} className="answer">
+                                    {a}
+                                </div>
+                            );
+                        }
                     })
                     : <div style={{ color: "red" }}>Answer this!</div>
                 }

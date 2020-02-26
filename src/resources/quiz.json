@@ -7,7 +7,8 @@
 			],
 			"image": "",
 			"section": "General",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Hash Collision",
@@ -16,7 +17,8 @@
 			],
 			"image": "",
 			"section": "General",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Hash Table",
@@ -25,7 +27,8 @@
 			],
 			"image": "",
 			"section": "General",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Hash Function",
@@ -34,7 +37,8 @@
 			],
 			"image": "",
 			"section": "General",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "4 OOP principals",
@@ -60,7 +64,8 @@
 			],
 			"image": "",
 			"section": "OOP",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SOLID principles",
@@ -108,7 +113,8 @@
 			],
 			"image": "",
 			"section": "OOP",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "N-tier architecture",
@@ -117,7 +123,8 @@
 			],
 			"image": "",
 			"section": "General",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Service Oriented Architecture",
@@ -126,7 +133,8 @@
 			],
 			"image": "",
 			"section": "General",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "TCP vs UDP",
@@ -137,7 +145,8 @@
 			],
 			"image": "",
 			"section": "Security",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "POCO",
@@ -148,7 +157,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "ASP.NET MVC",
@@ -159,7 +169,8 @@
 			],
 			"image": "",
 			"section": "C# .NET",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "",
@@ -168,7 +179,8 @@
 			],
 			"image": "",
 			"section": "",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Java HashSet vs TreeSet",
@@ -178,7 +190,8 @@
 			],
 			"image": "",
 			"section": "Java",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Java hashCode()",
@@ -187,7 +200,8 @@
 			],
 			"image": "",
 			"section": "Java",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Java Garbage Collection",
@@ -196,7 +210,8 @@
 			],
 			"image": "",
 			"section": "Java",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Constraint",
@@ -217,7 +232,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Delete vs. Truncate",
@@ -227,7 +243,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL commands (subsets of SQL)",
@@ -239,7 +256,8 @@
 			],
 			"image": "https://i.stack.imgur.com/7uUaJ.png",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Identity",
@@ -249,7 +267,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Alias",
@@ -258,7 +277,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Stored Procedures",
@@ -267,7 +287,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Joins",
@@ -277,7 +298,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Stored Procedure vs. Function",
@@ -290,7 +312,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Injection",
@@ -299,7 +322,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Trigger",
@@ -308,7 +332,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Get Identity of Inserted Row",
@@ -319,7 +344,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Server vs. Oracle",
@@ -334,7 +360,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL View vs Temp Table",
@@ -347,7 +374,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL CTE",
@@ -356,7 +384,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Clustered vs. Non-Clustered Index",
@@ -370,7 +399,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SQL Cursor",
@@ -379,7 +409,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Database Normalization",
@@ -388,7 +419,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "How to store passwords in database",
@@ -399,7 +431,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Rainbow table",
@@ -408,7 +441,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Object",
@@ -417,7 +451,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Accessor",
@@ -430,7 +465,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Access Modifiers",
@@ -449,7 +485,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Boxing vs. Unboxing",
@@ -464,7 +501,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Struct vs Object",
@@ -478,7 +516,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Generics",
@@ -487,7 +526,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Abstract vs. Interface",
@@ -498,7 +538,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# using",
@@ -507,7 +548,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Garbage Collector",
@@ -516,7 +558,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# delegate",
@@ -525,7 +568,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# lambda",
@@ -534,7 +578,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# volatile",
@@ -543,7 +588,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# virtual",
@@ -552,7 +598,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# unsafe",
@@ -561,7 +608,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# Static constructor",
@@ -570,7 +618,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# String vs. string vs. StringBuilder",
@@ -586,7 +635,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "C# value vs. reference",
@@ -601,7 +651,8 @@
 			],
 			"image": "",
 			"section": "C#",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": ".NET CLR",
@@ -610,7 +661,8 @@
 			],
 			"image": "",
 			"section": "C# .NET",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": ".NET routing",
@@ -619,7 +671,8 @@
 			],
 			"image": "",
 			"section": "C# .NET",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Azure Pipelines",
@@ -628,7 +681,8 @@
 			],
 			"image": "",
 			"section": "C# Azure",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Azure Artifacts",
@@ -637,7 +691,8 @@
 			],
 			"image": "",
 			"section": "C# Azure",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Git vs. SVN",
@@ -647,7 +702,8 @@
 			],
 			"image": "",
 			"section": "Git",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Web Server",
@@ -656,7 +712,8 @@
 			],
 			"image": "",
 			"section": "General",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Ports for HTTP/HTTPS",
@@ -666,7 +723,8 @@
 			],
 			"image": "",
 			"section": "Security",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Apache Kafka",
@@ -675,7 +733,8 @@
 			],
 			"image": "",
 			"section": "Kafka",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Data Warehouse",
@@ -684,7 +743,8 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Agile",
@@ -693,7 +753,8 @@
 			],
 			"image": "",
 			"section": "Agile/Scrum",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Scrum",
@@ -702,7 +763,8 @@
 			],
 			"image": "",
 			"section": "Agile/Scrum",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "SDLC steps",
@@ -711,7 +773,8 @@
 			],
 			"image": "",
 			"section": "Agile/Scrum",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Product Owner",
@@ -720,7 +783,8 @@
 			],
 			"image": "",
 			"section": "Agile/Scrum",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "TLS",
@@ -730,14 +794,16 @@
 			],
 			"image": "",
 			"section": "Security",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "",
 			"answer": [
 				""
 			],
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "BFS vs DFS",
@@ -753,7 +819,8 @@
 			],
 			"image": "",
 			"section": "Algorithms",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "jQuery <code>$</code>",
@@ -762,14 +829,16 @@
 			],
 			"image": "",
 			"section": "jQuery",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "",
 			"answer": [
 				""
 			],
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Tell me about yourself",
@@ -778,7 +847,8 @@
 			],
 			"image": "",
 			"section": "Behaviorial",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "STAR method",
@@ -795,7 +865,8 @@
 			],
 			"image": "",
 			"section": "Behaviorial",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Talk about a time when you had to work closely with someone whose personality was very different from yours.",
@@ -807,7 +878,8 @@
 			],
 			"image": "",
 			"section": "Behaviorial",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Give me an example of a time you faced a conflict while working on a team. How did you handle that?",
@@ -818,7 +890,8 @@
 			],
 			"image": "",
 			"section": "Behaviorial",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Talking Points",
@@ -834,7 +907,8 @@
 			],
 			"image": "",
 			"section": "Behaviorial",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "What was your role?",
@@ -844,7 +918,8 @@
 			],
 			"image": "",
 			"section": "Resume",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Pub/sub",
@@ -853,7 +928,8 @@
 			],
 			"image": "",
 			"section": "General",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "React - why?",
@@ -863,16 +939,27 @@
 			],
 			"image": "",
 			"section": "React",
-			"sources": []
+			"sources": [],
+			"type": ""
 		},
 		{
 			"question": "Design Pattern - Singleton",
 			"answer": [
-				"TODO"
+				"class Singleton",
+				"{",
+				"    private Singleton() { }",
+				"    private static Singleton _instance;",
+				"    public static Singleton GetInstance()",
+				"    {",
+				"         if (_instance == null) { instance = new Singleton(); }",
+				"         return _instance;",
+				"    }",
+				"}"
 			],
 			"image": "",
 			"section": "OOP",
-			"sources": []
+			"sources": [],
+			"type": "code"
 		},
 		{
 			"question": "",
