@@ -1,6 +1,7 @@
 import React from 'react';
 import "./QuizContainer.scss";
 import quiz from '../resources/quiz.json';
+import cSharpQuiz from '../resources/cSharpQuiz';
 
 export default class QuizContainer extends React.Component {
     constructor(props) {
@@ -22,7 +23,10 @@ export default class QuizContainer extends React.Component {
     }
 
     render() {
-        const quizQuestions = quiz.quiz.filter(q => q.question !== "");
+        const quizArray = quiz.quiz;
+        quizArray.concat(cSharpQuiz.quiz);
+
+        const quizQuestions = quizArray.filter(q => q.question !== "");
         quizQuestions.sort((a, b) => {
             var aSection = a.section || "z";
             var bSection = b.section || "z";

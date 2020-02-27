@@ -96,17 +96,6 @@
 			"type": ""
 		},
 		{
-			"question": "Abstract classes",
-			"answer": [
-				"Base class only and cannot be instantiated",
-				"Can have non-abstract methods"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
 			"question": "SOLID principles",
 			"answer": [
 				"Single responsibility principle",
@@ -188,30 +177,6 @@
 			"type": ""
 		},
 		{
-			"question": "POCO",
-			"answer": [
-				"Plain Old CLR/C# Object",
-				"a simple object that contains data",
-				"they don't care what/how they are being used"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "ASP.NET MVC",
-			"answer": [
-				"Model - POCOs",
-				"View - Razor",
-				"Controller - Route requests to controller actions"
-			],
-			"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/1024px-MVC-Process.svg.png",
-			"section": "C# .NET",
-			"sources": [],
-			"type": "list"
-		},
-		{
 			"question": "Java HashSet vs TreeSet",
 			"answer": [
 				"HashSet is unordered.",
@@ -243,21 +208,15 @@
 			"type": ""
 		},
 		{
-			"question": "SQL Constraint",
+			"question": "Constraint",
 			"answer": [
-				"enforce rules on the data columns",
-				"",
+				"rules that can be applied to the data",
+				"PRIMARY KEY - uniquely identify row/record in a given table, can be multiple columns",
+				"FOREIGN KEY - identify row/record in another table",
 				"NOT NULL",
-				"",
 				"DEFAULT",
-				"",
 				"UNIQUE",
-				"",
-				"PRIMARY KEY",
-				"identify row/record in a given table, can be multiple columns",
-				"",
-				"FOREIGN KEY",
-				"identify row/record in another table"
+				"CHECK"
 			],
 			"image": "",
 			"section": "SQL",
@@ -265,15 +224,17 @@
 			"type": ""
 		},
 		{
-			"question": "SQL Delete vs. Truncate",
+			"question": "Delete vs. Truncate",
 			"answer": [
-				"Delete can be rolled back, does not reset identity, DML",
-				"Truncate can't be rolled back, resets identity, faster, recovers space, removes all records, DDL"
+				"Delete logs each transaction and can be rolled back, Truncate cannot",
+				"Delete can use WHERE clause, Truncate cannot",
+				"Delete fires triggers, Truncate does not",
+				"Delete retains IDENTITY, Truncate resets IDENTITY back to SEED"
 			],
 			"image": "",
 			"section": "SQL",
 			"sources": [],
-			"type": ""
+			"type": "list"
 		},
 		{
 			"question": "commands (subsets of SQL)",
@@ -289,9 +250,9 @@
 			"type": "list"
 		},
 		{
-			"question": "SQL Identity",
+			"question": "Identity",
 			"answer": [
-				"type of column that generates a unique key value based on a given seed",
+				"type of column that generates a unique key value based on a given seed, increment (defaults to 1, 1)",
 				"this value increases automatically"
 			],
 			"image": "",
@@ -300,7 +261,7 @@
 			"type": ""
 		},
 		{
-			"question": "SQL Alias",
+			"question": "Alias",
 			"answer": [
 				"temporary name assigned to table or column (AS keyword)"
 			],
@@ -320,29 +281,29 @@
 			"type": ""
 		},
 		{
-			"question": "SQL Joins",
+			"question": "Stored Procedure vs. Function",
 			"answer": [
-				"left, right, inner, outer",
-				"<img src='https://i.stack.imgur.com/iJUMl.png'>"
+				"SP is precompiled, Function is compiled and executed every time",
+				"SP can return 0, 1, or multiple values, Function return scalar or table",
+				"SP can call Functions, but Functions cannot call SP"
 			],
 			"image": "",
 			"section": "SQL",
 			"sources": [],
-			"type": ""
+			"type": "list"
 		},
 		{
-			"question": "SQL Stored Procedure vs. Function",
+			"question": "Joins",
 			"answer": [
-				"Stored Procedure",
-				"Precompiled",
-				"",
-				"Function",
-				"Compiled and executed every time"
+				"inner - records that have matching values in both tables",
+				"left - all records from the left table and matched records in the right",
+				"right - all records from the right table and matched records in the left",
+				"outer - all records"
 			],
-			"image": "",
+			"image": "https://i.stack.imgur.com/iJUMl.png",
 			"section": "SQL",
 			"sources": [],
-			"type": ""
+			"type": "list"
 		},
 		{
 			"question": "SQL Injection",
@@ -470,346 +431,6 @@
 			],
 			"image": "",
 			"section": "SQL",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "Class/Object",
-			"answer": [
-				"Class describes the type",
-				"Object is the instance of a given class",
-				"A class is a blueprint and an object is a building made from that blueprint"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "Accessor",
-			"answer": [
-				"getter/setter"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "Access Modifiers",
-			"answer": [
-				"public - can be accessed by any code within all assemblies",
-				"private - can only be accessed by code in the same class",
-				"protected - can only be accessed by code in the same class or any dervied classes",
-				"internal - can be accessed by any code within the same assembly, but not from another assembly"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": "list"
-		},
-		{
-			"question": "C# Boxing vs. Unboxing",
-			"answer": [
-				"Boxing - value to reference type",
-				"<code>int i = 1;",
-				"Object o = i;</code>",
-				"",
-				"Unboxing - reference to value type",
-				"<code>Object o = 1;",
-				"int i = (int)o</code>"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# Struct vs Object",
-			"answer": [
-				"Struct",
-				"Value type",
-				"use when you don't need to support inheritance or polymorphism",
-				"",
-				"Class",
-				"Reference type"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [
-				"https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/object-oriented-programming"
-			],
-			"type": ""
-		},
-		{
-			"question": "C# Generics",
-			"answer": [
-				"Allows you to write a class or method that can work with any data type <code>public class TestClass<T> { }  </code>"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# Abstract vs. Interface",
-			"answer": [
-				"classes can implement as many interfaces (multiple inheritance), but only one abstact class",
-				"abstract class can define non-abstract methods and define/declare methods, interfaces can only declare methods",
-				"abstract methods can be protected, interface methods can only be public",
-				"abstract class can contain methods/fields/constants"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [
-				"https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-c-sharp/"
-			],
-			"type": ""
-		},
-		{
-			"question": "C# Abstract vs. Interface Example",
-			"answer": [
-				"public abstract class Abstract1",
-				"{",
-				"    public void Abstract1Method1() { /* ... */ }",
-				"    public abstract void Abstract1Method2();",
-				"    protected abstract void Abstract1Method3();",
-				"    //'Abstract1.Abstract1Method4()': virtual or abstract members cannot be private",
-				"    //private abstract void Abstract1Method4();",
-				"}",
-				"public interface IInterface1",
-				"{",
-				"    void IInterface1Method1();",
-				"}",
-				"public interface IInterface2",
-				"{",
-				"    void IInterface2Method1();",
-				"}",
-				"public class Class1 : Abstract1",
-				"{",
-				"    public override void Abstract1Method2() { /* ... */ }",
-				"    protected override void Abstract1Method3() { /* ... */ }",
-				"}",
-				"public class Class2 : IInterface1, IInterface2",
-				"{",
-				"    public void IInterface1Method1() { /* ... */ }",
-				"    public void IInterface2Method1() { /* ... */ }",
-				"}",
-				"public class Class3 : Abstract1, IInterface1",
-				"{",
-				"    public override void Abstract1Method2() { /* ... */ }",
-				"    protected override void Abstract1Method3() { /* ... */ }",
-				"    public void IInterface1Method1() { /* ... */ }",
-				"}",
-				"public class Class4 : Abstract1, IInterface1, IInterface2",
-				"{",
-				"    public override void Abstract1Method2() { /* ... */ }",
-				"    protected override void Abstract1Method3() { /* ... */ }",
-				"    public void IInterface1Method1() { /* ... */ }",
-				"    public void IInterface2Method1() { /* ... */ }",
-				"}"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": "code"
-		},
-		{
-			"question": "C# using",
-			"answer": [
-				"ensures that the given <code>IDisposable</code> object's <code>Dispose</code> method is called after execution, even if an exception is thrown"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# Garbage Collector",
-			"answer": [
-				"non-determinalistic way that allows us to not have to manually free memory on the heap"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# delegate",
-			"answer": [
-				"type that represents references to methods",
-				"allows methods to be passed as parameters",
-				"used in LINQ (lambda expressions)"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [
-				"https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/",
-				"https://docs.microsoft.com/en-us/dotnet/api/system.predicate-1?view=netframework-4.8"
-			],
-			"type": "list"
-		},
-		{
-			"question": "C# delegate/lambda LINQ example",
-			"answer": [
-				"// with delegate",
-				"List<int> result = list.FindAll(",
-				"    delegate (int i)",
-				"    {",
-				"        return i % 2 == 0;",
-				"    }",
-				");",
-				"// with lambda expression",
-				"List<int> result = list.FindAll(i => i % 2 == 0);"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [
-				"https://docs.microsoft.com/en-us/dotnet/standard/delegates-lambdas"
-			],
-			"type": "code"
-		},
-		{
-			"question": "C# lambda",
-			"answer": [
-				"another way to define a delegate, syntatic sugar"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# volatile",
-			"answer": [
-				"indicates field might be modified by multiple threads at the same time"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# virtual",
-			"answer": [
-				"signals this method/property/indexer/event declaration can be overriden in its derived class"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# virtual Example",
-			"answer": [
-				"public abstract class Abstract1",
-				"{",
-				"    public virtual void Abstract1Method1() { /* ... */ }",
-				"    public void Abstract1Method2() { /* ... */ }",
-				"}",
-				"public class Class1 : Abstract1",
-				"{",
-				"    public override void Abstract1Method1() { /* ... */ }",
-				"    //'Class1.Abstract1Method1()' hides inherited member 'Abstract1.Abstract1Method1()'.",
-				"    // Use the new keyword if hiding was intended.",
-				"    public new void Abstract1Method2() { /* ... */ }",
-				"}"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": "code"
-		},
-		{
-			"question": "C# unsafe",
-			"answer": [
-				"denotes unsafe context, which is required for any operation involving pointers"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# Static constructor",
-			"answer": [
-				"Static constructor only executes once in the entire life cycle of the class"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# String vs. string vs. StringBuilder",
-			"answer": [
-				"String",
-				"System.String is an alias for string",
-				"",
-				"string",
-				"immutable",
-				"",
-				"StringBuilder",
-				"mutable"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "C# value vs. reference",
-			"answer": [
-				"value",
-				"holds value",
-				"stored on stack",
-				"",
-				"reference",
-				"holds memory address",
-				"stored on heap"
-			],
-			"image": "",
-			"section": "C#",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": ".NET CLR",
-			"answer": [
-				"Common Language Runtime - runs managed code (written in .NET), unmanaged code is written outside of .NET"
-			],
-			"image": "",
-			"section": "C# .NET",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": ".NET routing",
-			"answer": [
-				"routes urls of incoming requests and maps them to actions"
-			],
-			"image": "",
-			"section": "C# .NET",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "Azure Pipelines",
-			"answer": [
-				""
-			],
-			"image": "",
-			"section": "C# Azure",
-			"sources": [],
-			"type": ""
-		},
-		{
-			"question": "Azure Artifacts",
-			"answer": [
-				"create package feeds (like from NuGet) to organize/control packages"
-			],
-			"image": "",
-			"section": "C# Azure",
 			"sources": [],
 			"type": ""
 		},
