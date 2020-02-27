@@ -38,6 +38,12 @@ export default class QuizContainer extends React.Component {
 
         return (
             <div>
+                <h1>
+                    Get a job, dude
+                </h1>
+                <a href="https://jonbudi.github.io/interview-quiz-app/" target="_blank" rel="noopener noreferrer">https://jonbudi.github.io/interview-quiz-app/</a>
+                <br />
+                <br />
                 <button onClick={this.showAll}>
                     Show all
                 </button>
@@ -115,39 +121,41 @@ class Answer extends React.Component {
         const hasSources = this.props.sources && this.props.sources.length > 0;
 
         return (
-            <div
-                className="answer-container"
-                onClick={this.handleClick}
-                style={this.props.isDisplayed ? {} : { display: "none" }}>
-                {this.props.answer && this.props.answer[0]
-                    ? this.props.answer.map((a, i) => {
-                        if (this.props.type === "code") {
-                            return (
-                                <div key={`a-${i}`} className="answer">
-                                    <code>
+            <div>
+                <div
+                    className="answer-container"
+                    onClick={this.handleClick}
+                    style={this.props.isDisplayed ? {} : { display: "none" }}>
+                    {this.props.answer && this.props.answer[0]
+                        ? this.props.answer.map((a, i) => {
+                            if (this.props.type === "code") {
+                                return (
+                                    <div key={`a-${i}`} className="answer answer--code">
+                                        <code>
+                                            {a}
+                                        </code>
+                                    </div>
+                                );
+                            }
+                            else if (this.props.type === "list") {
+                                return (
+                                    <li key={`a-${i}`} className="answer">
                                         {a}
-                                    </code>
-                                </div>
-                            );
-                        }
-                        else if (this.props.type === "list") {
-                            return (
-                                <li key={`a-${i}`} className="answer">
-                                    {a}
-                                </li>
-                            );
-                        }
-                        else {
-                            return (
-                                <div key={`a-${i}`} className="answer">
-                                    {a}
-                                </div>
-                            );
-                        }
-                    })
-                    : <div style={{ color: "red" }}>Answer this!</div>
-                }
-                {this.props.image && <img src={this.props.image} alt={this.props.image} />}
+                                    </li>
+                                );
+                            }
+                            else {
+                                return (
+                                    <div key={`a-${i}`} className="answer">
+                                        {a}
+                                    </div>
+                                );
+                            }
+                        })
+                        : <div style={{ color: "red" }}>Answer this!</div>
+                    }
+                    {this.props.image && <img src={this.props.image} alt={this.props.image} />}
+                </div>
                 <div className="sources">
                     {hasSources ? "Source(s):" : ""}
                     {hasSources && this.props.sources.map((a, i) => {

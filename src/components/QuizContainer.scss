@@ -1,8 +1,11 @@
 @import "./../styles/_variables.scss";
 
 .question-container {
-    margin-bottom: $spacing-md;
+    margin-bottom: $spacing-sm;
 
+    @include sm {
+        margin-bottom: $spacing-md;
+    }
     .question {
         @extend .unselectable;
         font-weight: 700;
@@ -11,18 +14,38 @@
     }
 
     .answer-container {
-        margin-left: $spacing-md;
+        margin-bottom: $spacing-xs;
+
+        @include sm {
+            margin-left: $spacing-md;
+        }
 
         .answer {
             margin-bottom: $spacing-xs;
 
-            code {
-                white-space: pre;
+            &.answer--code {
+                margin-bottom: 0;
+
+                code {
+                    white-space: pre;
+                    font-size: 10px;
+
+                    @include sm {
+                        font-size: initial;
+                    }
+                    margin-bottom: 0;
+                }
             }
         }
 
-        .sources a {
-            margin-left: $spacing-md;
+        img {
+            width: 100%;
+        }
+    }
+
+    .sources {
+        div {
+            margin-bottom: $spacing-xs;
         }
     }
 }

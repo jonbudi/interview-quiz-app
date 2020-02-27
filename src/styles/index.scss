@@ -5,7 +5,12 @@ body {
         "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: $spacing-lg;
+
+    margin: $spacing-xs;
+
+    @include sm {
+        margin: $spacing-lg;
+    }
 }
 
 code {
