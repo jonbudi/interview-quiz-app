@@ -96,16 +96,16 @@
 			"type": ""
 		},
 		{
-            "question": "Abstract classes",
-            "answer": [
+			"question": "Abstract classes",
+			"answer": [
 				"Base class only and cannot be instantiated",
 				"Can have non-abstract methods"
-            ],
-            "image": "",
-            "section": "C#",
-            "sources": [],
-            "type": ""
-        },
+			],
+			"image": "",
+			"section": "C#",
+			"sources": [],
+			"type": ""
+		},
 		{
 			"question": "SOLID principles",
 			"answer": [
@@ -554,14 +554,65 @@
 		{
 			"question": "C# Abstract vs. Interface",
 			"answer": [
-				"Class can implement as many interfaces, but only one abstact class",
-				"abstract class can have non-abstract methods, where interface can only have abstract methods",
-				"abstract class can declase/use variables"
+				"classes can implement as many interfaces (multiple inheritance), but only one abstact class",
+				"abstract class can define non-abstract methods and define/declare methods, interfaces can only declare methods",
+				"abstract methods can be protected, interface methods can only be public",
+				"abstract class can contain methods/fields/constants"
+			],
+			"image": "",
+			"section": "C#",
+			"sources": [
+				"https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-c-sharp/"
+			],
+			"type": ""
+		},
+		{
+			"question": "C# Abstract vs. Interface Example",
+			"answer": [
+				"public abstract class Abstract1",
+				"{",
+				"    public void Abstract1Method1() { /* ... */ }",
+				"    public abstract void Abstract1Method2();",
+				"    protected abstract void Abstract1Method3();",
+				"    //'Abstract1.Abstract1Method4()': virtual or abstract members cannot be private",
+				"    //private abstract void Abstract1Method4();",
+				"}",
+				"public interface IInterface1",
+				"{",
+				"    void IInterface1Method1();",
+				"}",
+				"public interface IInterface2",
+				"{",
+				"    void IInterface2Method1();",
+				"}",
+				"public class Class1 : Abstract1",
+				"{",
+				"    public override void Abstract1Method2() { /* ... */ }",
+				"    protected override void Abstract1Method3() { /* ... */ }",
+				"}",
+				"public class Class2 : IInterface1, IInterface2",
+				"{",
+				"    public void IInterface1Method1() { /* ... */ }",
+				"    public void IInterface2Method1() { /* ... */ }",
+				"}",
+				"public class Class3 : Abstract1, IInterface1",
+				"{",
+				"    public override void Abstract1Method2() { /* ... */ }",
+				"    protected override void Abstract1Method3() { /* ... */ }",
+				"    public void IInterface1Method1() { /* ... */ }",
+				"}",
+				"public class Class4 : Abstract1, IInterface1, IInterface2",
+				"{",
+				"    public override void Abstract1Method2() { /* ... */ }",
+				"    protected override void Abstract1Method3() { /* ... */ }",
+				"    public void IInterface1Method1() { /* ... */ }",
+				"    public void IInterface2Method1() { /* ... */ }",
+				"}"
 			],
 			"image": "",
 			"section": "C#",
 			"sources": [],
-			"type": ""
+			"type": "code"
 		},
 		{
 			"question": "C# using",
@@ -602,7 +653,7 @@
 			"question": "C# delegate/lambda LINQ example",
 			"answer": [
 				"// with delegate",
-                "List<int> result = list.FindAll(",
+				"List<int> result = list.FindAll(",
 				"    delegate (int i)",
 				"    {",
 				"        return i % 2 == 0;",
@@ -647,6 +698,27 @@
 			"section": "C#",
 			"sources": [],
 			"type": ""
+		},
+		{
+			"question": "C# virtual Example",
+			"answer": [
+				"public abstract class Abstract1",
+				"{",
+				"    public virtual void Abstract1Method1() { /* ... */ }",
+				"    public void Abstract1Method2() { /* ... */ }",
+				"}",
+				"public class Class1 : Abstract1",
+				"{",
+				"    public override void Abstract1Method1() { /* ... */ }",
+				"    //'Class1.Abstract1Method1()' hides inherited member 'Abstract1.Abstract1Method1()'.",
+				"    // Use the new keyword if hiding was intended.",
+				"    public new void Abstract1Method2() { /* ... */ }",
+				"}"
+			],
+			"image": "",
+			"section": "C#",
+			"sources": [],
+			"type": "code"
 		},
 		{
 			"question": "C# unsafe",
@@ -751,6 +823,18 @@
 			"section": "Git",
 			"sources": [],
 			"type": ""
+		},
+		{
+			"question": "How to create a new branch",
+			"answer": [
+				"git branch {new_branch_name}",
+				"// checkout and branch shortcut:",
+				"git checkout -b {new_branch_name}"
+			],
+			"image": "",
+			"section": "Git",
+			"sources": [],
+			"type": "code"
 		},
 		{
 			"question": "Web Server",
@@ -978,6 +1062,18 @@
 			"image": "",
 			"section": "General",
 			"sources": [],
+			"type": ""
+		},
+		{
+			"question": "Microservices",
+			"answer": [
+				"Technique used to arrange an application into loosely coupled services"
+			],
+			"image": "",
+			"section": "Architecture",
+			"sources": [
+				"https://en.wikipedia.org/wiki/Microservices"
+			],
 			"type": ""
 		},
 		{
