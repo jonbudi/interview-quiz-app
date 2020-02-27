@@ -39,7 +39,7 @@ export default class QuizContainer extends React.Component {
         return (
             <div>
                 <h1>
-                    Get a job, dude
+                    Get a job, dude.
                 </h1>
                 <a href="https://jonbudi.github.io/interview-quiz-app/" target="_blank" rel="noopener noreferrer">https://jonbudi.github.io/interview-quiz-app/</a>
                 <br />
