@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/interview-quiz-app/static/css/main.f6a2d5ad.chunk.css",
-    "main.js": "/interview-quiz-app/static/js/main.c3c484f8.chunk.js",
-    "main.js.map": "/interview-quiz-app/static/js/main.c3c484f8.chunk.js.map",
+    "main.css": "/interview-quiz-app/static/css/main.6551d1c9.chunk.css",
+    "main.js": "/interview-quiz-app/static/js/main.0473e295.chunk.js",
+    "main.js.map": "/interview-quiz-app/static/js/main.0473e295.chunk.js.map",
     "runtime-main.js": "/interview-quiz-app/static/js/runtime-main.16d78e85.js",
     "runtime-main.js.map": "/interview-quiz-app/static/js/runtime-main.16d78e85.js.map",
     "static/js/2.018d6474.chunk.js": "/interview-quiz-app/static/js/2.018d6474.chunk.js",
     "static/js/2.018d6474.chunk.js.map": "/interview-quiz-app/static/js/2.018d6474.chunk.js.map",
     "index.html": "/interview-quiz-app/index.html",
-    "precache-manifest.50f9d4dd59978bcbb332cc952dc709ab.js": "/interview-quiz-app/precache-manifest.50f9d4dd59978bcbb332cc952dc709ab.js",
+    "precache-manifest.5f31f31af6c28b48018579837f5c0c61.js": "/interview-quiz-app/precache-manifest.5f31f31af6c28b48018579837f5c0c61.js",
     "service-worker.js": "/interview-quiz-app/service-worker.js",
-    "static/css/main.f6a2d5ad.chunk.css.map": "/interview-quiz-app/static/css/main.f6a2d5ad.chunk.css.map",
+    "static/css/main.6551d1c9.chunk.css.map": "/interview-quiz-app/static/css/main.6551d1c9.chunk.css.map",
     "static/js/2.018d6474.chunk.js.LICENSE.txt": "/interview-quiz-app/static/js/2.018d6474.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.16d78e85.js",
     "static/js/2.018d6474.chunk.js",
-    "static/css/main.f6a2d5ad.chunk.css",
-    "static/js/main.c3c484f8.chunk.js"
+    "static/css/main.6551d1c9.chunk.css",
+    "static/js/main.0473e295.chunk.js"
   ]
 }
