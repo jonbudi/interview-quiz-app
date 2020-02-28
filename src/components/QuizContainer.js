@@ -143,9 +143,11 @@ class Answer extends React.Component {
                             }
                             else if (this.props.type === "list") {
                                 return (
-                                    <li key={`a-${i}`} className="answer">
-                                        {a}
-                                    </li>
+                                    <ul>
+                                        <li key={`a-${i}`} className="answer">
+                                            {a}
+                                        </li>
+                                    </ul>
                                 );
                             }
                             else {

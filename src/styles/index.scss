@@ -17,11 +17,15 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-a, a:visited{
+a,
+a:visited {
     color: blue;
 }
 
 button {
+    font-size: 18px;
+    background-color: white;
     padding: $spacing-xs;
-    margin: $spacing-xs;
+    width: 50%;
+    border: 1px solid black;
 }

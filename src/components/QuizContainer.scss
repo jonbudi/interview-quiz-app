@@ -28,7 +28,7 @@
 
                 code {
                     white-space: pre;
-                    font-size: 10px;
+                    font-size: 12px;
 
                     @include sm {
                         font-size: initial;
@@ -45,6 +45,7 @@
     }
 
     .sources {
+        word-wrap: break-word;
         div {
             margin-bottom: $spacing-xs;
         }
