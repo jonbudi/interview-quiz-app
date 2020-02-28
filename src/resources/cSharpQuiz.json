@@ -353,6 +353,17 @@
             "type": ""
         },
         {
+            "question": "How to debug an issue",
+            "answer": [
+                "Check logs",
+                "Ensure code handles exceptions, with appropriate error messages"
+            ],
+            "image": "",
+            "section": "General",
+            "sources": [],
+            "type": "list"
+        },
+        {
             "question": "Abstract classes",
             "answer": [
                 "Base class only and cannot be instantiated",

@@ -3,7 +3,8 @@
 		{
 			"question": "Dependency Injection",
 			"answer": [
-				"technique where if an object requires a different object to function, supply it, rather than creating the instance within the object"
+				"technique to pass a dependancy into an object",
+				"provide the object what it needs, instead of having the object construct it"
 			],
 			"image": "",
 			"section": "General",
@@ -306,7 +307,7 @@
 			"type": "list"
 		},
 		{
-			"question": "SQL Injection",
+			"question": "Injection",
 			"answer": [
 				"technique used to maliciously modify the data"
 			],
@@ -316,9 +317,23 @@
 			"type": ""
 		},
 		{
+			"question": "Prevent SQL Injection",
+			"answer": [
+				"SqlCommand and add parameters to SqlParameterCollection",
+				"ORM (like Entity Framework)",
+				"Escape input"
+			],
+			"image": "",
+			"section": "",
+			"sources": [
+				"https://docs.microsoft.com/en-us/dotnet/api/system.data.sqlclient.sqlcommand.parameters?redirectedfrom=MSDN&view=netframework-4.8#System_Data_SqlClient_SqlCommand_Parameters"
+			],
+			"type": ""
+		},
+		{
 			"question": "SQL Trigger",
 			"answer": [
-				"a stored procedure that runs on a given event"
+				"a piece of SQL code that runs on a given event"
 			],
 			"image": "",
 			"section": "SQL",
@@ -326,7 +341,7 @@
 			"type": ""
 		},
 		{
-			"question": "SQL Get Identity of Inserted Row",
+			"question": "Get Identity of Inserted Row",
 			"answer": [
 				"<code>@@Identity</code> returns the last identity value in current session across all scopes",
 				"",
@@ -368,7 +383,7 @@
 			"type": ""
 		},
 		{
-			"question": "SQL CTE",
+			"question": "CTE",
 			"answer": [
 				"Common table expression allows definition of a temporary result set within the given scope"
 			],
@@ -382,7 +397,6 @@
 			"answer": [
 				"Clustered",
 				"Index that sorts datarows on one of their key values",
-				"",
 				"Non-Clustered",
 				"allows for multiple indexes for a given column",
 				"faster lookups but extra storage"
@@ -431,6 +445,16 @@
 			],
 			"image": "",
 			"section": "SQL",
+			"sources": [],
+			"type": ""
+		},
+		{
+			"question": "Object/Relation Mapping Framework (ORM)",
+			"answer": [
+				"Entity Framework"
+			],
+			"image": "",
+			"section": "General",
 			"sources": [],
 			"type": ""
 		},
@@ -742,6 +766,48 @@
 			"sources": [
 				"https://csharpindepth.com/articles/singleton"
 			],
+			"type": "code"
+		},
+		{
+			"question": "Fibonacci",
+			"answer": [
+				"private static Dictionary<int, int> FibDictionary",
+				"    = new Dictionary<int, int>();",
+				"public static int FibRecursive(int n)",
+				"{",
+				"    if (n <= 1)",
+				"    {",
+				"        return 1;",
+				"    }",
+				"    else if (FibDictionary.TryGetValue(n, out var value))",
+				"    {",
+				"        return value;",
+				"    }",
+				"    else",
+				"    {",
+				"        var result = FibRecursive(n - 1)",
+				"            + FibRecursive(n - 2);",
+				"        FibDictionary.Add(n, result);",
+				"        return result;",
+				"    }",
+				"}",
+				"public static int FibIterative(int n)",
+				"{",
+				"    var result = 1;",
+				"    var prev = 1;",
+				"    var prevPrev = 1;",
+				"    for (var i = 0; i < n - 1; ++i)",
+				"    {",
+				"        result = prev + prevPrev;",
+				"        prevPrev = prev;",
+				"        prev = result;",
+				"    }",
+				"    return result;",
+				"}"
+			],
+			"image": "",
+			"section": "Code",
+			"sources": [],
 			"type": "code"
 		}
 	]
