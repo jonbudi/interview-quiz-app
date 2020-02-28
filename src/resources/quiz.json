@@ -24,7 +24,7 @@
 		{
 			"question": "Hash Table",
 			"answer": [
-				""
+				"Maps keys (via hash function to bucket) to values"
 			],
 			"image": "",
 			"section": "General",

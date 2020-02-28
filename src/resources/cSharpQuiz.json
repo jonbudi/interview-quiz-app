@@ -69,14 +69,26 @@
             "type": ""
         },
         {
-            "question": "C# Generics",
+            "question": "Generics",
             "answer": [
-                "Allows you to write a class or method that can work with any data type <code>public class TestClass<T> { }  </code>"
+                "Allows you to write a class or method that can work with any data type"
+            ],
+            "image": "",
+            "section": "C#",
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/generics/"
+            ],
+            "type": ""
+        },
+        {
+            "question": "Generics Example",
+            "answer": [
+                "public class TestClass<T> { }"
             ],
             "image": "",
             "section": "C#",
             "sources": [],
-            "type": ""
+            "type": "code"
         },
         {
             "question": "Abstract vs. Interface",
@@ -98,7 +110,7 @@
             "answer": [
                 "public abstract class Abstract1",
                 "{",
-                "    public void Abstract1Method1() { /* ... */ }",
+                "    public void Abstract1Method1() { }",
                 "    public abstract void Abstract1Method2();",
                 "    protected abstract void Abstract1Method3();",
                 "    //'Abstract1.Abstract1Method4()':",
@@ -115,26 +127,26 @@
                 "}",
                 "public class Class1 : Abstract1",
                 "{",
-                "    public override void Abstract1Method2() { /* ... */ }",
-                "    protected override void Abstract1Method3() { /* ... */ }",
+                "    public override void Abstract1Method2() { }",
+                "    protected override void Abstract1Method3() { }",
                 "}",
                 "public class Class2 : IInterface1, IInterface2",
                 "{",
-                "    public void IInterface1Method1() { /* ... */ }",
-                "    public void IInterface2Method1() { /* ... */ }",
+                "    public void IInterface1Method1() { }",
+                "    public void IInterface2Method1() { }",
                 "}",
                 "public class Class3 : Abstract1, IInterface1",
                 "{",
-                "    public override void Abstract1Method2() { /* ... */ }",
-                "    protected override void Abstract1Method3() { /* ... */ }",
-                "    public void IInterface1Method1() { /* ... */ }",
+                "    public override void Abstract1Method2() { }",
+                "    protected override void Abstract1Method3() { }",
+                "    public void IInterface1Method1() { }",
                 "}",
                 "public class Class4 : Abstract1, IInterface1, IInterface2",
                 "{",
-                "    public override void Abstract1Method2() { /* ... */ }",
-                "    protected override void Abstract1Method3() { /* ... */ }",
-                "    public void IInterface1Method1() { /* ... */ }",
-                "    public void IInterface2Method1() { /* ... */ }",
+                "    public override void Abstract1Method2() { }",
+                "    protected override void Abstract1Method3() { }",
+                "    public void IInterface1Method1() { }",
+                "    public void IInterface2Method1() { }",
                 "}"
             ],
             "image": "",
@@ -155,13 +167,15 @@
             "type": ""
         },
         {
-            "question": "C# Garbage Collector",
+            "question": "Garbage Collector",
             "answer": [
                 "non-determinalistic way that allows us to not have to manually free memory on the heap"
             ],
             "image": "",
             "section": "C#",
-            "sources": [],
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals"
+            ],
             "type": ""
         },
         {
@@ -216,7 +230,9 @@
             ],
             "image": "",
             "section": "C#",
-            "sources": [],
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/volatile"
+            ],
             "type": ""
         },
         {
@@ -234,16 +250,16 @@
             "answer": [
                 "public abstract class Abstract1",
                 "{",
-                "    public virtual void Abstract1Method1() { /* ... */ }",
-                "    public void Abstract1Method2() { /* ... */ }",
+                "    public virtual void Abstract1Method1() { }",
+                "    public void Abstract1Method2() { }",
                 "}",
                 "public class Class1 : Abstract1",
                 "{",
-                "    public override void Abstract1Method1() { /* ... */ }",
+                "    public override void Abstract1Method1() { }",
                 "    //'Class1.Abstract1Method1()' hides inherited",
                 "    // member 'Abstract1.Abstract1Method1()'.",
                 "    // Use the new keyword if hiding was intended.",
-                "    public new void Abstract1Method2() { /* ... */ }",
+                "    public new void Abstract1Method2() { }",
                 "}"
             ],
             "image": "",
@@ -252,23 +268,28 @@
             "type": "code"
         },
         {
-            "question": "C# unsafe",
+            "question": "unsafe",
             "answer": [
                 "denotes unsafe context, which is required for any operation involving pointers"
             ],
             "image": "",
             "section": "C#",
-            "sources": [],
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/unsafe"
+            ],
             "type": ""
         },
         {
-            "question": "C# Static constructor",
+            "question": "Static constructor",
             "answer": [
-                "Static constructor only executes once in the entire life cycle of the class"
+                "Static constructor only executes once in the entire life cycle of the class",
+                "before any instance constructor is invoked or member is accessed"
             ],
             "image": "",
             "section": "C#",
-            "sources": [],
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors"
+            ],
             "type": ""
         },
         {
@@ -322,7 +343,7 @@
         {
             "question": "Azure Pipelines",
             "answer": [
-                ""
+                "cloud service that lets you automatically build/test project"
             ],
             "image": "",
             "section": "C# Azure",
