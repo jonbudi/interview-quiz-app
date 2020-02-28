@@ -26,8 +26,7 @@ export default class QuizContainer extends React.Component {
         const quizArray = quiz.quiz;
         quizArray.concat(cSharpQuiz.quiz);
 
-        const quizQuestions = quizArray.filter(q => q.question !== "");
-        quizQuestions.sort((a, b) => {
+        quizArray.sort((a, b) => {
             var aSection = a.section || "z";
             var bSection = b.section || "z";
             var compareSections = aSection.localeCompare(bSection);
@@ -36,7 +35,7 @@ export default class QuizContainer extends React.Component {
                 : a.question.localeCompare(b.question);
         });
 
-        const listItems = quizQuestions.map((item, i) =>
+        const listItems = quizArray.map((item, i) =>
             <QuestionContainer key={i} i={i} item={item} />
         );
 
