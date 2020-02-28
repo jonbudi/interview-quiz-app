@@ -23,9 +23,8 @@ export default class QuizContainer extends React.Component {
     }
 
     render() {
-        const quizArray = quiz.quiz;
-        quizArray.concat(cSharpQuiz.quiz);
-
+        const quizArray = [...quiz.quiz, ...cSharpQuiz.quiz];
+        
         quizArray.sort((a, b) => {
             var aSection = a.section || "z";
             var bSection = b.section || "z";
@@ -94,7 +93,8 @@ class QuestionContainer extends React.Component {
                     isDisplayed={this.state.isDisplayed}
                     image={item.image}
                     sources={item.sources}
-                    type={item.type} />
+                    type={item.type}
+                    id={i} />
             </div>
         );
     }
@@ -133,7 +133,7 @@ class Answer extends React.Component {
                         ? this.props.answer.map((a, i) => {
                             if (this.props.type === "code") {
                                 return (
-                                    <div key={`a-${i}`} className="answer answer--code">
+                                    <div key={`a-${this.props.id}-${i}`} className="answer answer--code">
                                         <code>
                                             {a}
                                         </code>
@@ -142,8 +142,8 @@ class Answer extends React.Component {
                             }
                             else if (this.props.type === "list") {
                                 return (
-                                    <ul>
-                                        <li key={`a-${i}`} className="answer">
+                                    <ul key={`ul-${this.props.id}-${i}`}>
+                                        <li key={`a-${this.props.id}-${i}`} className="answer">
                                             {a}
                                         </li>
                                     </ul>
@@ -151,7 +151,7 @@ class Answer extends React.Component {
                             }
                             else {
                                 return (
-                                    <div key={`a-${i}`} className="answer">
+                                    <div key={`a-${this.props.id}-${i}`} className="answer">
                                         {a}
                                     </div>
                                 );
@@ -165,7 +165,7 @@ class Answer extends React.Component {
                     {hasSources ? "Source(s):" : ""}
                     {hasSources && this.props.sources.map((a, i) => {
                         return (
-                            <div>
+                            <div key={`div-${this.props.id}-${i}`}>
                                 <a href={a} target="_blank" rel="noopener noreferrer">{a}</a>
                             </div>
                         );

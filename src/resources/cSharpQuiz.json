@@ -79,7 +79,7 @@
             "type": ""
         },
         {
-            "question": "C# Abstract vs. Interface",
+            "question": "Abstract vs. Interface",
             "answer": [
                 "classes can implement as many interfaces (multiple inheritance), but only one abstact class",
                 "abstract class can define non-abstract methods and define/declare methods, interfaces can only declare methods",
@@ -94,14 +94,15 @@
             "type": ""
         },
         {
-            "question": "C# Abstract vs. Interface Example",
+            "question": "Abstract vs. Interface Example",
             "answer": [
                 "public abstract class Abstract1",
                 "{",
                 "    public void Abstract1Method1() { /* ... */ }",
                 "    public abstract void Abstract1Method2();",
                 "    protected abstract void Abstract1Method3();",
-                "    //'Abstract1.Abstract1Method4()': virtual or abstract members cannot be private",
+                "    //'Abstract1.Abstract1Method4()':",
+                "    //virtual or abstract members cannot be private",
                 "    //private abstract void Abstract1Method4();",
                 "}",
                 "public interface IInterface1",
@@ -142,13 +143,15 @@
             "type": "code"
         },
         {
-            "question": "C# using",
+            "question": "using",
             "answer": [
-                "ensures that the given <code>IDisposable</code> object's <code>Dispose</code> method is called after execution, even if an exception is thrown"
+                "ensures that the given IDisposable object's Dispose method is called after execution, even if an exception is thrown"
             ],
             "image": "",
             "section": "C#",
-            "sources": [],
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-statement"
+            ],
             "type": ""
         },
         {
@@ -162,7 +165,7 @@
             "type": ""
         },
         {
-            "question": "C# delegate",
+            "question": "delegate",
             "answer": [
                 "type that represents references to methods",
                 "allows methods to be passed as parameters",
@@ -177,7 +180,7 @@
             "type": "list"
         },
         {
-            "question": "C# delegate/lambda LINQ example",
+            "question": "delegate/lambda LINQ example",
             "answer": [
                 "// with delegate",
                 "List<int> result = list.FindAll(",
@@ -197,7 +200,7 @@
             "type": "code"
         },
         {
-            "question": "C# lambda",
+            "question": "lambda",
             "answer": [
                 "another way to define a delegate, syntatic sugar"
             ],
@@ -217,7 +220,7 @@
             "type": ""
         },
         {
-            "question": "C# virtual",
+            "question": "virtual",
             "answer": [
                 "signals this method/property/indexer/event declaration can be overriden in its derived class"
             ],
@@ -227,7 +230,7 @@
             "type": ""
         },
         {
-            "question": "C# virtual Example",
+            "question": "virtual Example",
             "answer": [
                 "public abstract class Abstract1",
                 "{",
@@ -237,7 +240,8 @@
                 "public class Class1 : Abstract1",
                 "{",
                 "    public override void Abstract1Method1() { /* ... */ }",
-                "    //'Class1.Abstract1Method1()' hides inherited member 'Abstract1.Abstract1Method1()'.",
+                "    //'Class1.Abstract1Method1()' hides inherited",
+                "    // member 'Abstract1.Abstract1Method1()'.",
                 "    // Use the new keyword if hiding was intended.",
                 "    public new void Abstract1Method2() { /* ... */ }",
                 "}"
@@ -268,16 +272,11 @@
             "type": ""
         },
         {
-            "question": "C# String vs. string vs. StringBuilder",
+            "question": "String vs. string vs. StringBuilder",
             "answer": [
-                "String",
-                "System.String is an alias for string",
-                "",
-                "string",
-                "immutable",
-                "",
-                "StringBuilder",
-                "mutable"
+                "String - System.String is an alias for string",
+                "string - immutable",
+                "StringBuilder - mutable"
             ],
             "image": "",
             "section": "C#",
