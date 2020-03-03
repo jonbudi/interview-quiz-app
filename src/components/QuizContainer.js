@@ -2,6 +2,7 @@ import React from 'react';
 import "./QuizContainer.scss";
 import quiz from '../resources/quiz.json';
 import cSharpQuiz from '../resources/cSharpQuiz';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default class QuizContainer extends React.Component {
     constructor(props) {
@@ -24,7 +25,7 @@ export default class QuizContainer extends React.Component {
 
     render() {
         const quizArray = [...quiz.quiz, ...cSharpQuiz.quiz];
-        
+
         quizArray.sort((a, b) => {
             var aSection = a.section || "z";
             var bSection = b.section || "z";
@@ -159,7 +160,7 @@ class Answer extends React.Component {
                         })
                         : <div style={{ color: "red" }}>Answer this!</div>
                     }
-                    {this.props.image && <img src={this.props.image} alt={this.props.image} />}
+                    {this.props.image && <LazyLoadImage src={this.props.image} alt={this.props.image} />}
                 </div>
                 <div className="sources">
                     {hasSources ? "Source(s):" : ""}
