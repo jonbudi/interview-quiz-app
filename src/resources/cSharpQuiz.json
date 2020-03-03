@@ -305,12 +305,11 @@
             "type": ""
         },
         {
-            "question": "C# value vs. reference",
+            "question": "Value vs. Reference",
             "answer": [
                 "value",
                 "holds value",
                 "stored on stack",
-                "",
                 "reference",
                 "holds memory address",
                 "stored on heap"
@@ -319,6 +318,46 @@
             "section": "C#",
             "sources": [],
             "type": ""
+        },
+        {
+            "question": "Value vs. Reference Example",
+            "answer": [
+                "static void Main(string[] args)",
+                "{",
+                "    int arg;",
+                "",
+                "    // Passing by value.",
+                "    // The value of arg in Main is not changed.",
+                "    arg = 4;",
+                "    squareVal(arg);",
+                "    Console.WriteLine(arg);",
+                "    // Output: 4",
+                "",
+                "    // Passing by reference.",
+                "    // The value of arg in Main is changed.",
+                "    arg = 4;",
+                "    squareRef(ref arg);",
+                "    Console.WriteLine(arg);",
+                "    // Output: 16 ",
+                "}",
+                "",
+                "static void squareVal(int valParameter)",
+                "{",
+                "    valParameter *= valParameter;",
+                "}",
+                "",
+                "// Passing by reference",
+                "static void squareRef(ref int refParameter)",
+                "{",
+                "    refParameter *= refParameter;",
+                "}"
+            ],
+            "image": "",
+            "section": "C#",
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters"
+            ],
+            "type": "code"
         },
         {
             "question": ".NET CLR",
@@ -397,14 +436,79 @@
         {
             "question": "ASP.NET MVC",
             "answer": [
-                "Model - POCOs",
-                "View - Razor",
-                "Controller - Route requests to controller actions"
+                "Model - Represents the state of application and contains all business logic",
+                "View - Razor view engine",
+                "Controller - Responds to user input by routing requests to controller actions"
             ],
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/MVC-Process.svg/1024px-MVC-Process.svg.png",
             "section": "C# .NET",
             "sources": [],
             "type": "list"
+        },
+        {
+            "question": "Service Lifetimes",
+            "answer": [
+                "Transient - created each time they're requested from the service container",
+                "Scoped - created once per client request",
+                "Singleton - created the first time they're requested"
+            ],
+            "image": "",
+            "section": "C# ASP.NET MVC Core",
+            "sources": [
+                "https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-3.1#service-lifetimes"
+            ],
+            "type": ""
+        },
+        {
+            "question": "Application Pool",
+            "answer": [
+                "Allows isolation of applications on the same server",
+                "If there is an error in one app, it won't take down the other applications"
+            ],
+            "image": "",
+            "section": "C# IIS",
+            "sources": [],
+            "type": ""
+        },
+        {
+            "question": "Async Practical Usage",
+            "answer": [
+                "Three APIs being called in a single action, each takes 500ms.",
+                "Synchronous calls = 1500ms, Async = 500ms"
+            ],
+            "image": "",
+            "section": "C#",
+            "sources": [],
+            "type": ""
+        },
+        {
+            "question": ".NET Framework vs. .NET Core",
+            "answer": [
+                ".NET Core",
+                "Cross-platform",
+                "Microservices/Docker containers",
+                ".NET Framework",
+                "App is currently using .NET Framework (MSFT recommends extending rather than migrating",
+                "App uses third-party .NET libraries or NuGet packages not available in .NET Core"
+            ],
+            "image": "",
+            "section": "C#",
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/standard/choosing-core-framework-server"
+            ],
+            "type": ""
+        },
+        {
+            "question": "Tag Helpers",
+            "answer": [
+                "Assist the server-side creation of HTML elements within a Razor file"
+            ],
+            "image": "",
+            "section": "C# ASP.NET Core",
+            "sources": [
+                "https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-3.1"
+            ],
+            "type": ""
         }
     ]
 }

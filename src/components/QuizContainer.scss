@@ -22,6 +22,7 @@
 
         .answer {
             margin-bottom: $spacing-xs;
+            min-height: 21px;
 
             &.answer--code {
                 margin-bottom: 0;

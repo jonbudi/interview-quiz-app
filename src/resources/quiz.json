@@ -12,6 +12,19 @@
 			"type": ""
 		},
 		{
+			"question": "CRUD Operations",
+			"answer": [
+				"Create",
+				"Read",
+				"Update",
+				"Delete"
+			],
+			"image": "",
+			"section": "General",
+			"sources": [],
+			"type": "list"
+		},
+		{
 			"question": "Hash Collision",
 			"answer": [
 				"occurs when a hash function returns the same bucket location for two different keys"
@@ -55,7 +68,7 @@
 			"type": "list"
 		},
 		{
-			"question": "Abstraction",
+			"question": "4 OOP principals - Abstraction",
 			"answer": [
 				"Hide complexity and only show essential info to the user"
 			],
@@ -65,7 +78,7 @@
 			"type": ""
 		},
 		{
-			"question": "Encapsulation",
+			"question": "4 OOP principals - Encapsulation",
 			"answer": [
 				"Grouping related properties, methods, and other members as a single unit/object"
 			],
@@ -75,7 +88,7 @@
 			"type": ""
 		},
 		{
-			"question": "Inheritance",
+			"question": "4 OOP principals - Inheritance",
 			"answer": [
 				"Create new classes based on an existing class"
 			],
@@ -85,7 +98,7 @@
 			"type": ""
 		},
 		{
-			"question": "Polymorphism",
+			"question": "4 OOP principals - Polymorphism",
 			"answer": [
 				"Allows the ability to take on more than one form",
 				"method overloading - method with the same name, but different parameters",
@@ -125,20 +138,27 @@
 			"answer": [
 				"Creational",
 				"provide the capability to create objects based on a required criteria and in a controlled way",
+				"",
 				"Singleton",
 				"Ensure class has only one instance to be used across an entire system",
+				"EX: Browser Singleton in Selenium",
 				"",
 				"Abstract factory",
+				"Creates an instance of a related objects without specifying the exact class",
+				"EX: Indicator factory into Backtester",
 				"",
 				"Structural",
 				"organizing different classes and objects to form larger structures and provide new functionality",
-				"Decorator",
 				"",
-				"Facade",
+				"Decorator",
+				"Add functionality to objects dynamically",
 				"",
 				"Behavioral",
 				"identifying common communication patterns between objects and realize these patterns",
-				"Iterator"
+				"",
+				"Termplate Method",
+				"Define skeleton of algorithm, deferring some step to subclasses",
+				"EX: Buy/Sell methods"
 			],
 			"image": "",
 			"section": "OOP",
@@ -390,6 +410,18 @@
 			"type": ""
 		},
 		{
+			"question": "SQL Index",
+			"answer": [
+				"Used to speed up searching within the database"
+			],
+			"image": "",
+			"section": "SQL",
+			"sources": [
+				"https://stackoverflow.com/questions/2955459/what-is-an-index-in-sql"
+			],
+			"type": ""
+		},
+		{
 			"question": "SQL Clustered vs. Non-Clustered Index",
 			"answer": [
 				"Clustered",
@@ -409,6 +441,16 @@
 				"enables the processing of individual rows returned by a query"
 			],
 			"image": "",
+			"section": "SQL",
+			"sources": [],
+			"type": ""
+		},
+		{
+			"question": "Students/Courses",
+			"answer": [
+				"See image"
+			],
+			"image": "https://i.stack.imgur.com/HY78n.png",
 			"section": "SQL",
 			"sources": [],
 			"type": ""
