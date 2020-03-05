@@ -295,8 +295,8 @@
         {
             "question": "String vs. string vs. StringBuilder",
             "answer": [
-                "String - System.String is an alias for string",
-                "string - immutable",
+                "String - System.String is a CLR Type",
+                "string - alias for System.String, immutable",
                 "StringBuilder - mutable"
             ],
             "image": "",
@@ -488,7 +488,7 @@
                 "Cross-platform",
                 "Microservices/Docker containers",
                 ".NET Framework",
-                "App is currently using .NET Framework (MSFT recommends extending rather than migrating",
+                "App is currently using .NET Framework (MSFT recommends extending rather than migrating)",
                 "App uses third-party .NET libraries or NuGet packages not available in .NET Core"
             ],
             "image": "",
@@ -507,6 +507,18 @@
             "section": "C# ASP.NET Core",
             "sources": [
                 "https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/intro?view=aspnetcore-3.1"
+            ],
+            "type": ""
+        },
+        {
+            "question": "Namespace",
+            "answer": [
+                "declare scope/organize code elements"
+            ],
+            "image": "",
+            "section": "C#",
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/namespace"
             ],
             "type": ""
         }

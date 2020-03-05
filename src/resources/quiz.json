@@ -425,10 +425,13 @@
 			"question": "SQL Clustered vs. Non-Clustered Index",
 			"answer": [
 				"Clustered",
-				"Index that sorts datarows on one of their key values",
+				"The way the data is physically stored in a table",
+				"Describes order when doing SELECT * FROM ...",
+				"Only one per table",
 				"Non-Clustered",
-				"allows for multiple indexes for a given column",
-				"faster lookups but extra storage"
+				"Works with pointers, mapping data is stored in a separate table",
+				"Tradeoff is faster lookups with extra storage",
+				"Can have multiple per table"
 			],
 			"image": "",
 			"section": "SQL",
@@ -494,6 +497,17 @@
 			],
 			"image": "",
 			"section": "General",
+			"sources": [],
+			"type": ""
+		},
+		{
+			"question": "nvarchar vs. varchar",
+			"answer": [
+				"nvarchar stores unicode data (2 bytes per char)",
+				"varchar stores ascii data (1 byte per char)"
+			],
+			"image": "",
+			"section": "SQL",
 			"sources": [],
 			"type": ""
 		},
@@ -764,7 +778,7 @@
 			"type": ""
 		},
 		{
-			"question": "Singleton",
+			"question": "Design Patterns - Singleton",
 			"answer": [
 				"class Singleton",
 				"{",
@@ -793,7 +807,7 @@
 				"}"
 			],
 			"image": "",
-			"section": "OOP - Design Pattern",
+			"section": "OOP",
 			"sources": [
 				"https://csharpindepth.com/articles/singleton"
 			],
