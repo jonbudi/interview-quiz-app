@@ -44,18 +44,18 @@ export default class QuizContainer extends React.Component {
                 <h1>
                     Get a job, dude.
                 </h1>
-                <button
-                    onClick={this.showAll}>
-                    Show all
-                </button>
-                <button
-                    onClick={this.hideAll}>
-                    Hide all
-                </button>
-                <br />
-                <br />
+                <div className="button-container">
+                    <button
+                        onClick={this.showAll}>
+                        Show all
+                    </button>
+                    <button
+                        onClick={this.hideAll}>
+                        Hide all
+                    </button>
+                </div>
                 {listItems}
-                <a href="https://jonbudi.github.io/interview-quiz-app/" target="_blank" rel="noopener noreferrer">https://jonbudi.github.io/interview-quiz-app/</a>
+                <a className="link-container" href="https://jonbudi.github.io/interview-quiz-app/" target="_blank" rel="noopener noreferrer">https://jonbudi.github.io/interview-quiz-app/</a>
             </div>
         );
     }

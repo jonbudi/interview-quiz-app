@@ -1,11 +1,26 @@
 @import "./../styles/_variables.scss";
 
-.question-container {
-    margin-bottom: $spacing-sm;
+h1,
+.button-container,
+.link-container {
+    margin: $spacing-sm;
 
     @include sm {
-        margin-bottom: $spacing-md;
+        margin: $spacing-md;
     }
+}
+
+.question-container {
+    padding: $spacing-sm;
+
+    @include sm {
+        padding: $spacing-md;
+    }
+
+    &:nth-child(odd) {
+        background-color: #eeeeee;
+    }
+
     .question {
         @extend .unselectable;
         font-weight: 700;
@@ -51,6 +66,11 @@
             margin-bottom: $spacing-xs;
         }
     }
+}
+
+.button-container {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .unselectable {
