@@ -55,7 +55,14 @@ export default class QuizContainer extends React.Component {
                     </button>
                 </div>
                 {listItems}
-                <a className="link-container" href="https://jonbudi.github.io/interview-quiz-app/" target="_blank" rel="noopener noreferrer">https://jonbudi.github.io/interview-quiz-app/</a>
+                <div className="link-container">
+                    <a
+                        href="https://jonbudi.github.io/interview-quiz-app/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        https://jonbudi.github.io/interview-quiz-app/
+                    </a>
+                </div>
             </div>
         );
     }
