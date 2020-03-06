@@ -44,18 +44,20 @@ export default class QuizContainer extends React.Component {
                 <h1>
                     Get a job, dude.
                 </h1>
-                <a href="https://jonbudi.github.io/interview-quiz-app/" target="_blank" rel="noopener noreferrer">https://jonbudi.github.io/interview-quiz-app/</a>
-                <br />
-                <br />
-                <button onClick={this.showAll}>
+                <button
+                    class="unselectable"
+                    onClick={this.showAll}>
                     Show all
                 </button>
-                <button onClick={this.hideAll}>
+                <button
+                    class="unselectable"
+                    onClick={this.hideAll}>
                     Hide all
                 </button>
                 <br />
                 <br />
                 {listItems}
+                <a href="https://jonbudi.github.io/interview-quiz-app/" target="_blank" rel="noopener noreferrer">https://jonbudi.github.io/interview-quiz-app/</a>
             </div>
         );
     }
@@ -65,8 +67,7 @@ class QuestionContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            // isDisplayed: false
-            isDisplayed: true
+            isDisplayed: false
         };
         this.handleClick = this.handleClick.bind(this);
     }
@@ -125,11 +126,11 @@ class Answer extends React.Component {
         const hasSources = this.props.sources && this.props.sources.length > 0;
 
         return (
-            <div>
+            <div
+                style={this.props.isDisplayed ? {} : { display: "none" }}>
                 <div
                     className="answer-container"
-                    onClick={this.handleClick}
-                    style={this.props.isDisplayed ? {} : { display: "none" }}>
+                    onClick={this.handleClick}>
                     {this.props.answer && this.props.answer[0]
                         ? this.props.answer.map((a, i) => {
                             if (this.props.type === "code") {

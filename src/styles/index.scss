@@ -11,6 +11,8 @@ body {
     @include sm {
         margin: 0 $spacing-lg;
     }
+
+    background-color: #eeeeff;
 }
 
 code {
@@ -24,10 +26,14 @@ a:visited {
 
 button {
     font-size: 18px;
+    font-weight: 700;
     background-color: white;
     padding: $spacing-xs;
     width: 50%;
     border: 1px solid black;
+    background-color: #eeeeee;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 ul {
