@@ -126,9 +126,9 @@ class Answer extends React.Component {
         return (
             <div
                 className="answer-container"
-                style={this.props.isDisplayed ? {} : { display: "none" }}>
-                <div
-                    onClick={this.handleClick}>
+                style={this.props.isDisplayed ? {} : { display: "none" }}
+                onClick={this.handleClick}>
+                <div>
                     {this.props.answer && this.props.answer[0]
                         ? this.props.answer.map((a, i) => {
                             if (this.props.type === "code") {

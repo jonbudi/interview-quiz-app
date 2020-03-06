@@ -21,10 +21,10 @@ h1,
         background-color: #eeeeee;
     }
 
+    cursor: pointer;
+
     .question {
-        @extend .unselectable;
         font-weight: 700;
-        cursor: pointer;
         margin-bottom: $spacing-xs;
     }
 
@@ -34,6 +34,8 @@ h1,
         @include sm {
             margin-left: $spacing-md;
         }
+
+        cursor: text;
 
         .answer {
             margin-bottom: $spacing-xs;
