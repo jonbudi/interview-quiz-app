@@ -17,7 +17,7 @@ h1,
         padding: $spacing-md;
     }
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
         background-color: #eeeeee;
     }
 
