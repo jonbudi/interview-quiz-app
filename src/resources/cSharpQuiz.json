@@ -366,7 +366,9 @@
             ],
             "image": "",
             "section": "C# .NET",
-            "sources": [],
+            "sources": [
+                "https://docs.microsoft.com/en-us/dotnet/standard/clr"
+            ],
             "type": ""
         },
         {

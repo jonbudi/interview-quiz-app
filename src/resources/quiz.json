@@ -512,6 +512,26 @@
 			"type": ""
 		},
 		{
+			"question": "Scalar",
+			"answer": [
+				"A query that returns one row with one column"
+			],
+			"image": "",
+			"section": "SQL",
+			"sources": [],
+			"type": ""
+		},
+		{
+			"question": "ExecuteNonQuery",
+			"answer": [
+				"Executes a T-SQL statement and returns the number of rows affected"
+			],
+			"image": "",
+			"section": "SQL",
+			"sources": [],
+			"type": ""
+		},
+		{
 			"question": "Git vs. SVN",
 			"answer": [
 				"Git distributed version control",
