@@ -39,3 +39,13 @@ button {
 ul {
     padding-inline-start: 20px;
 }
+
+input[type="button"] {
+    outline: none;
+}
+input[type="button"]::-moz-focus-inner {
+    border: 0;
+}
+*:focus {
+    outline: 0 !important;
+}

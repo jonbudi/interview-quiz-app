@@ -45,12 +45,10 @@ export default class QuizContainer extends React.Component {
                     Get a job, dude.
                 </h1>
                 <button
-                    class="unselectable"
                     onClick={this.showAll}>
                     Show all
                 </button>
                 <button
-                    class="unselectable"
                     onClick={this.hideAll}>
                     Hide all
                 </button>
@@ -127,9 +125,9 @@ class Answer extends React.Component {
 
         return (
             <div
+                className="answer-container"
                 style={this.props.isDisplayed ? {} : { display: "none" }}>
                 <div
-                    className="answer-container"
                     onClick={this.handleClick}>
                     {this.props.answer && this.props.answer[0]
                         ? this.props.answer.map((a, i) => {
